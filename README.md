@@ -4,20 +4,21 @@
 
 <pre>
 dayone-todo
-├── client : _Frontend folder_
-│ ├── App.js : _Entry component_
-│ ├── ./graphql
-│ │ ├── Queries.js : _Contains all GraphQL queries_
-│ │ └── Mutations.js : _Contains all GraphQL mutations_
-│ ├── ./components
-│ │ ├── ./Error : _Contains all GraphQL queries_
-│ │ ├── ./Loading : _Contains all GraphQL queries_
-│ │ ├── ./Todo : _Contains all GraphQL queries_
-│ │ └── ./Filters : _Contains all GraphQL mutations_
-│ ├── ./pages
-│ └── ./pages
-└── server : _Backend folder_
-└── ...
+├── client
+│   ├── App.js : Entry component
+│   ├── ./graphql
+│   │   ├── Queries.js : Contains all GraphQL queries
+│   │   └── Mutations.js : Contains all GraphQL mutations
+│   ├── ./components
+│   │   ├── ./Error : Component displayed in case of error in fetching data
+│   │   ├── ./Loading : Component displayed during data fetching
+│   │   ├── ./Todo : Component that represents a task (used in ./pages/TodoList)
+│   │   └── ./Filters : Component contains form inputs to filter todos list (Select, Checkbox...)
+│   └── ./pages
+│       ├── ./TodoList : Page contains todos list with filters
+│       └── ./TodoDetails : Page contains the details of a todo
+└── server
+    └── ...
 </pre>
 
 ## Running the project
