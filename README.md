@@ -1,5 +1,25 @@
 # DayOne Todos Application
 
+## Project structure
+
+<pre>
+dayone-todo
+├── client : _Frontend folder_
+│ ├── App.js : _Entry component_
+│ ├── ./graphql
+│ │ ├── Queries.js : _Contains all GraphQL queries_
+│ │ └── Mutations.js : _Contains all GraphQL mutations_
+│ ├── ./components
+│ │ ├── ./Error : _Contains all GraphQL queries_
+│ │ ├── ./Loading : _Contains all GraphQL queries_
+│ │ ├── ./Todo : _Contains all GraphQL queries_
+│ │ └── ./Filters : _Contains all GraphQL mutations_
+│ ├── ./pages
+│ └── ./pages
+└── server : _Backend folder_
+└── ...
+</pre>
+
 ## Running the project
 
 1. Clone the repository : `git clone https://github.com/mustaphaboudouch/dayone-todo.git`
@@ -24,4 +44,4 @@
 
 1. Docker gives me an update error, so I decide to do the project without Docker so as not to waste time.
 
-2. Backend server gives me error that cannot import from module, I tried adding `"type": "module"` to `package.json` file but the problem is not resolved. So I decided to change the import/export syntax from ES6 to ES5.
+2. The main server gives me an error that it cannot import from a module, I add `"type": "module"` to `package.json` file but the problem is not resolved. So I decided to change the import / export syntax from ES6 to ES5.
